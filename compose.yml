@@ -1,0 +1,9 @@
+services:
+  permission-script:
+    container_name: permission-script
+    image: perimission-script:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /opt/dir1:/opt/dir1
